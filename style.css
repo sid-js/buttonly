@@ -1,59 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: #19191F;
+body {
+  background-color: #19191f;
 }
 
-nav{
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.canvas-box {
+  margin: 30px 50px 30px 50px;
+  height: 210px;
+  background-color: #141418;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.main-btn {
+  background-color: #396afc;
+  color: white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-btn:hover {
+  background-color: #5681ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.settings-sec {
+  margin: 30px 50px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.set-box {
+  width: 400px;
+  height: 450px;
+  border-radius: 14px;
+  background-color: #141418;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-underline {
+  border: 1px solid #9803e0;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.form-text {
+  width: 100%;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("/images/down-arrow.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+  }
+
+
+.input-box {
+  background-color: #232327;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: #dbdbdb;
+  padding: 4px 25px 4px 10px;
+  outline: none;
+}
+
+
+.input-box:focus {
+  outline: none;
+  border: 2px solid #9803e0;
+  -webkit-box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+  -moz-box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+  box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+}
+
+.text-label {
+  color: #7b7b8f;
+  font-size: medium;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.font-inline-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-top: 30px;
-}
-
-.canvas-box{
-    margin: 30px 50px 30px 50px;
-    height: 210px;
-    background-color: #141418;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.main-btn{
-    background-color: #396AFC;
-    color: white;
-    padding: 15px 35px 15px 35px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 500;
-}
-.main-btn:hover{
-    background-color: #5681ff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.settings-sec{
-    margin: 30px 50px 30px 50px;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-
-}
-
-.set-box{
-    width: 400px;
-    height: 450px;
-    border-radius: 14px;
-    background-color: #141418;
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
 }

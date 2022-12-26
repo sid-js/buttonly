@@ -19,14 +19,14 @@
     <!-- navbar -->
     <header class="container-fluid">
         <nav>
-            <img src="./images/favicon.png" alt="favicon" height="42px">
+            <img src="./images/buttonly.png" alt="favicon" height="68px">
         </nav>
     </header>
 
     <!-- canvas -->
     <section class="canvas-box">
         <div class="canvas">
-            <button class="main-btn">
+            <button class="main-btn" id="main-button">
                 Get Started
             </button>
         </div>
@@ -37,18 +37,66 @@
 
         <div class="text-settings set-box">
 
+                <div class="text-header">
+                    <p>Text Settings</p>
+                    <hr class="text-underline" color="#9803E0" width="20%" size="3">
+                </div>
+    
+                <div class="input-container">
+                    <label for="button-text" class="text-label">Button Text</label>
+                    <input class="input-box" id="button-text" type="text" value="Get Started">
+                 </div>
+                 <div class="font-inline-form">
+                    <div class="input-container">
+                        <label for="font-family" class="text-label">Font Family</label>
+                        <select style="padding-right: 20px;" class="input-box" id="font-family">
+                            <option value="poppins">Poppins</option>
+                            <option value="poppins">Manrope</option>
+                            <option value="poppins">Open Sans</option>
+                            <option value="poppins">DM Sans</option>
+                        </select>
+                     </div>
+                     <div class="input-container">
+                        <label for="font-size" class="text-label">Font Size</label>
+                        <select style="padding-right: 20px;" class="input-box" id="font-family">
+                            <option value="poppins">14</option>
+                            <option value="poppins">18</option>
+                            <option value="poppins">22</option>
+                            <option value="poppins">30</option>
+                        </select>
+                     </div>
+                 </div>
+
+                 <div class="input-container">
+                    <label for="font-size" class="text-label">Font Weight</label>
+                    <select style="padding-right: 20px;" class="input-box" id="font-family">
+                        <option value="poppins">Light</option>
+                        <option value="poppins">Regular</option>
+                        <option value="poppins">Bold</option>
+                        <option value="poppins">Extrabold</option>
+                    </select>
+                 </div>
+                 
+
+
         </div>
 
         <div class="color-settings set-box">
-
+            <div class="text-header">
+                <p>Color Settings</p>
+                <hr class="text-underline" color="#9803E0" width="20%" size="3">
+            </div>
         </div>
 
         <div class="border-settings set-box">
-
+            <div class="text-header">
+                <p>Border Settings</p>
+                <hr class="text-underline" color="#9803E0" width="20%" size="3">
+            </div>
         </div>
 
     </section>
-
+<script src="/app.js" type="text/javascript"></script>
 </body>
 
 </html>
