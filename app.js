@@ -6,3 +6,6 @@ document.getElementById('button-text').addEventListener('input',function(){
     let buttonTextInput = document.getElementById('button-text').value; // Get input value
     button.textContent = buttonTextInput;
 })
+
+
+// button.style.fontSize = whatever value;
