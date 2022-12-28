@@ -113,7 +113,7 @@ select {
   gap: 5px;
 }
 
-.font-inline-form {
+.inline-form {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -124,7 +124,7 @@ select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   height: 50px;
-  width: 50px;
+  width: 100px;
   outline: none;
   appearance: none !important;
   border: none;
@@ -133,13 +133,7 @@ select {
 }
 
 .color-picker::-webkit-color-swatch{
-  width: 50px;
+  width: 100px;
   border-radius: 14px;
   border: none;
-}
-
-input[type="color" i][list] {
-  appearance: none;
-  width: 50px;
-  height: 50px;
 }
