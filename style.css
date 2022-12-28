@@ -19,7 +19,7 @@ nav {
 
 .canvas-box {
   margin: 30px 50px 30px 50px;
-  height: 210px;
+  height: 180px;
   background-color: #141418;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ nav {
 
 .set-box {
   width: 400px;
-  height: 450px;
+  height: 350px;
   border-radius: 14px;
   background-color: #141418;
   color: white;
