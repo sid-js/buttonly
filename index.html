@@ -29,7 +29,15 @@
             <button class="main-btn" id="main-button">
                 Get Started
             </button>
+
         </div>
+        <div class=" copy-box">
+            <button class="copy-btn">
+                click here to copy
+                <img src="./images/copy-icon.png" alt="copy" width="20px" style="filter: invert(1);">
+            </button>
+        </div>
+
     </section>
 
     <!-- settings -->
@@ -37,46 +45,46 @@
 
         <div class="text-settings set-box">
 
-                <div class="text-header">
-                    <p>Text Settings</p>
-                    <hr class="text-underline" color="#9803E0" width="20%" size="3">
-                </div>
-    
-                <div class="input-container">
-                    <label for="button-text" class="text-label">Button Text</label>
-                    <input class="input-box" id="button-text" type="text" value="Get Started">
-                 </div>
-                 <div class="inline-form">
-                    <div class="input-container">
-                        <label for="font-family" class="text-label">Font Family</label>
-                        <select style="padding-right: 20px;" class="input-box" id="font-family">
-                            <option value="poppins">Poppins</option>
-                            <option value="poppins">Manrope</option>
-                            <option value="poppins">Open Sans</option>
-                            <option value="poppins">DM Sans</option>
-                        </select>
-                     </div>
-                     <div class="input-container">
-                        <label for="font-size" class="text-label">Font Size</label>
-                        <select style="padding-right: 20px;" class="input-box" id="font-size">
-                            <option value="14">14</option>
-                            <option value="18">18</option>
-                            <option value="22">22</option>
-                            <option value="30">30</option>
-                        </select>
-                     </div>
-                 </div>
+            <div class="text-header">
+                <p>Text Settings</p>
+                <hr class="text-underline" color="#9803E0" width="20%" size="3">
+            </div>
 
-                 <div class="input-container">
-                    <label for="font-size" class="text-label">Font Weight</label>
-                    <select style="padding-right: 20px;" class="input-box" id="font-weight">
-                        <option value="poppins">Light</option>
-                        <option value="poppins">Regular</option>
-                        <option value="poppins">Bold</option>
-                        <option value="poppins">Extrabold</option>
+            <div class="input-container">
+                <label for="button-text" class="text-label">Button Text</label>
+                <input class="input-box" id="button-text" type="text" value="Get Started">
+            </div>
+            <div class="inline-form">
+                <div class="input-container">
+                    <label for="font-family" class="text-label">Font Family</label>
+                    <select style="padding-right: 20px;" class="input-box" id="font-family">
+                        <option value="poppins">Poppins</option>
+                        <option value="poppins">Manrope</option>
+                        <option value="poppins">Open Sans</option>
+                        <option value="poppins">DM Sans</option>
                     </select>
-                 </div>
-                 
+                </div>
+                <div class="input-container">
+                    <label for="font-size" class="text-label">Font Size</label>
+                    <select style="padding-right: 20px;" class="input-box" id="font-size">
+                        <option value="14px">14</option>
+                        <option value="18px">18</option>
+                        <option value="22px">22</option>
+                        <option value="30px">30</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="font-size" class="text-label">Font Weight</label>
+                <select style="padding-right: 20px;" class="input-box" id="font-weight">
+                    <option value="300">Light</option>
+                    <option value="400">Regular</option>
+                    <option value="700">Bold</option>
+                    <option value="900">Extrabold</option>
+                </select>
+            </div>
+
 
 
         </div>
@@ -91,12 +99,12 @@
                     <label for="button-color" class="text-label">Button Color</label>
                     <input class="color-picker" id="button-color" type="color" value="#396afc">
                 </div>
-                 <div class="input-container">
+                <div class="input-container">
                     <label for="button-color-text" class="text-label">Text Color</label>
                     <input class="color-picker" id="button-color-text" type="color" value="#ffffff">
                 </div>
             </div>
-           
+
             <!-- <hr color="#232327"> -->
             <div class="text-header">
                 <p>On Hover</p>
@@ -105,27 +113,75 @@
             <div class="inline-form">
                 <div class="input-container">
                     <label for="button-color" class="text-label">Button Color</label>
-                    <input class="color-picker" id="button-color" type="color" value="#396afc">
+                    <input class="color-picker" id="hover-button-color" type="color" value="#396afc">
                 </div>
                 <div class="input-container">
                     <label for="button-color-text" class="text-label">Text Color</label>
-                    <input class="color-picker" id="button-color-text" type="color" value="#ffffff">
+                    <input class="color-picker" id="hover-button-color-text" type="color" value="#ffffff">
                 </div>
             </div>
-            
-            
+
+
 
         </div>
 
         <div class="border-settings set-box">
             <div class="text-header">
-                <p>Border Settings</p>
-                <hr class="text-underline" color="#9803E0" width="20%" size="3">
+                <p>Border & Padding Settings</p>
+                <hr class="text-underline" color="#9803E0" width="45%" size="3">
             </div>
-        </div>
+
+            <div class="input-container">
+
+
+                <div class="slider-value-container">
+                    <label for="button-border-text" class="text-label">Border Radius</label>
+                    <div>
+                        <input type="text" value="20" class="slider-text" id="radius-value"><span
+                            style="font-size: 12px;">px</span>
+                    </div>
+                </div>
+                <input class="radius-slider" value="20" min="0" max="60" type="range" id="radius-slider"
+                    onchange="updateTextInput(this.value, 'radius-value')" ;>
+
+
+
+                <div class=" input-container">
+                    <div class="padding-sliders">
+
+
+                        <div class="slider-value-container">
+                            <label for="button-padding" class="text-label">Padding X</label>
+                            <div>
+                                <input type="text" value=35" id="xValue" class="slider-text"><span
+                                    style="font-size: 12px;">px</span>
+                            </div>
+
+                        </div>
+                        <input class="radius-slider" value=35" min="0" max="80" id="slider-x" type="range"
+                            onchange="updateTextInput(this.value, 'xValue');">
+
+
+                        <div class="slider-value-container">
+                            <label for="button-padding" class="text-label">Padding Y</label>
+                            <div>
+                                <input type="text" value="15" class="slider-text" id="yValue"><span
+                                    style="font-size: 12px;">px</span>
+                            </div>
+
+                        </div>
+                        <input class="radius-slider" value="15" min="0" max="80" id="slider-y" type="range"
+                            onchange="updateTextInput(this.value, 'yValue');">
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
     </section>
-<script src="/app.js" type="text/javascript"></script>
+    <script src="/app.js" type="text/javascript"></script>
 </body>
 
 </html>
