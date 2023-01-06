@@ -23,21 +23,15 @@ document
   .getElementById("radius-slider")
   .addEventListener("change", function () {
     let borderRadius = document.getElementById("radius-slider").value;
-    button.style.borderRadius = borderRadius;
+    button.style.borderRadius = borderRadius + "px";
   });
 
 document.getElementById("slider-x").addEventListener("change", function () {
   let xSlider = document.getElementById("slider-x").value;
-  button.style.paddingInline = xSlider;
+  button.style.paddingInline = xSlider + "px";
 });
 
 document.getElementById("slider-y").addEventListener("change", function () {
   let ySlider = document.getElementById("slider-y").value;
-  button.style.paddingBlock = ySlider;
+  button.style.paddingBlock = ySlider + "px";
 });
-
-function changeBgColour() {
-  button.style.color = doumcent.getElementById("button-color").value;
-}
-
-// button.style.backgroundColor = color;
