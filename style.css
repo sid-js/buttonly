@@ -17,14 +17,28 @@ nav {
   padding-top: 30px;
 }
 
-.canvas-box {
+.canvas{
   margin: 30px 50px 30px 50px;
-  height: 180px;
+  height: 250px;
   background-color: #141418;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.copy-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.copy-btn{
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
 }
 
 .main-btn {
@@ -34,12 +48,15 @@ nav {
   border-radius: 20px;
   font-size: 18px;
   font-weight: 500;
+  border: 0;
 }
 .main-btn:hover {
   background-color: #5681ff;
   cursor: pointer;
   transition: 0.2s;
 }
+
+
 
 .settings-sec {
   margin: 30px 50px 30px 50px;
@@ -136,4 +153,74 @@ select {
   width: 100px;
   border-radius: 14px;
   border: none;
+}
+
+
+.slider-value-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+
+.radius-slider{
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%; 
+  height: 10px; 
+  background: #7b7b8f;  
+  color: #9803e0;
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 0.7; 
+  border-radius: 10px;
+}
+
+.radius-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%;
+  background: #9803e0;
+  -webkit-box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+  -moz-box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+  box-shadow: 0px 0px 14px -4px rgba(186, 47, 255, 0.52);
+  cursor: pointer;
+
+}
+
+.slider-text{
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  /* display: inline; */
+  width: 15px;
+  border: 0;
+  font-size: 12px;
+  
+}
+
+.checkbox-style{
+  height: 30px;
+  background-color: #9803e0;
+}
+
+
+.checkbox-style:checked{
+  background-color: #9803e0;
+}
+
+.padding-sliders{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 }
