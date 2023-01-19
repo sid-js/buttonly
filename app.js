@@ -35,3 +35,15 @@ document.getElementById("slider-y").addEventListener("change", function () {
   let ySlider = document.getElementById("slider-y").value;
   button.style.paddingBlock = ySlider + "px";
 });
+
+
+document.getElementById("button-color").addEventListener("input",function() {
+  let buttonColor = document.getElementById("button-color").value;
+  button.style.backgroundColor = buttonColor;
+})
+
+document.getElementById("button-color-text").addEventListener("input",function() {
+  let buttonTextColor = document.getElementById("button-color-text").value;
+  button.style.color = buttonTextColor;
+
+})
